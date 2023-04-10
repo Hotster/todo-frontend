@@ -1,0 +1,14 @@
+.folderContainer {
+    display: flex;
+    align-items: center;
+    height: 2em;
+}
+
+.folderName {
+    padding: .5em;
+}
+
+.active {
+    background-color: var(--gray-field);
+    border-radius: 5px;
+}

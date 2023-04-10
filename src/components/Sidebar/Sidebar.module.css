@@ -1,0 +1,66 @@
+.sidebarContainer {
+  display: flex;
+  flex-direction: column;
+  gap: .5em;
+  width: 15em;
+  height: 100%;
+  border-radius: 5px;
+  background-color: var(--dark-gray);
+  padding: .5em;
+}
+
+.sidebarMenuList {
+  border-bottom: 1px solid var(--gray-line);
+}
+
+.addFolderContainer {
+  display: grid;
+  align-content: center;
+  align-items: center;
+  grid-template-columns: 1fr auto;
+  grid-gap: .25em;
+  height: 2em;
+  background-color: var(--dark-gray-field);
+  border-radius: 5px;
+  padding: .5em;
+}
+
+.addFolderInput {
+  background-color: var(--dark-gray-field);
+  color: var(--white);
+  border: none;
+  outline: none;
+}
+
+.addFolderInput::placeholder {
+  color: var(--white);
+}
+
+.addFolderInput:focus::placeholder {
+  color: var(--dark-gray-field);
+}
+
+.addFolderButton {
+  background-color: var(--dark-gray-field);
+  border: none;
+  padding: .45em;
+  transition: all .1s;
+}
+
+.addFolderButtonImage {
+  width: .9em;
+  height: .9em;
+  background-color: transparent;
+  background-image: url("../../icons/arrowRight.svg");
+  background-size: cover;
+}
+
+.addFolderButton:active {
+  transform: scale(.7);
+}
+
+@media (max-width: 800px) {
+  .sidebarContainer {
+    display: none;
+  }
+}

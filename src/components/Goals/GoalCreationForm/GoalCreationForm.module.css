@@ -1,0 +1,102 @@
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: .2em;
+}
+
+.frame,
+.additionalFieldsFrame {
+    display: flex;
+    align-items: center;
+    gap: .5em;
+    height: 3em;
+    background-color: var(--gray-field);
+}
+
+.frame {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.checkbox {
+    display: none;
+}
+
+.checkboxFrame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.customCheckbox {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.customCheckbox::before {
+    content: "";
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    background-size: cover;
+    cursor: pointer;
+    transition: all .2s;
+    background-image: url("../../../icons/circleEmpty.svg");
+}
+
+.input {
+    font-size: 1rem;
+    color-scheme: dark;
+    background-color: var(--gray-field);
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    color: var(--white);
+    caret-color: var(--white);
+    border-bottom: 1px solid var(--gray-line);
+}
+
+.input:focus {
+    outline: none;
+}
+
+.input::placeholder {
+    color: var(--gray-placeholder);
+}
+
+.formPanel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 3em;
+    background-color: var(--dark-gray-field);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top: 1px solid var(--gray-line);
+}
+
+.additionalFields {
+    height: 0;
+    overflow: hidden;
+    transition: all .35s;
+}
+
+.additionalFieldsActive {
+    height: 9em;
+}
+
+.additionalFieldsToggle {
+    font-size: .75rem;
+    cursor: pointer;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}
+
+.expandBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5em;
+    cursor: pointer;
+}

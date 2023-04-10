@@ -1,0 +1,14 @@
+.button {
+    cursor: pointer;
+    border: none;
+    width: 2.25em;
+    height: 2.25em;
+    border-radius: 50%;
+    background-color: var(--dark-gray-field);
+    background-image: url("../../../icons/addGoal.svg");
+    background-size: cover;
+}
+
+.button:active {
+    background-color: var(--light-blue);
+}

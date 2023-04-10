@@ -1,0 +1,27 @@
+.input,
+.textarea {
+    background-color: var(--gray-field);
+    color: var(--white);
+    height: 2em;
+    border: none;
+    border-radius: 5px;
+    padding: 0 .35em;
+}
+
+.inputInvalid {
+    border: 1px solid var(--red);
+}
+
+.input[type="date"]::-webkit-datetime-edit-text,
+.input[type="date"]::-webkit-datetime-edit-month-field,
+.input[type="date"]::-webkit-datetime-edit-day-field,
+.input[type="date"]::-webkit-datetime-edit-year-field {
+  color: var(--gray-placeholder);
+}
+
+.textarea {
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 2em;
+    max-height: 15em;
+}

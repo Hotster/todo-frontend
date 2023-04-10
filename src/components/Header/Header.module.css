@@ -1,0 +1,45 @@
+.header {
+    width: 100%;
+    background-color: var(--dark-gray);
+}
+
+.container {
+    display: grid;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.box {
+    display: flex;
+    height: 2.5em;
+    justify-content: space-between;
+}
+
+.box {
+    display: flex;
+    height: 2.5em;
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: .5em
+}
+
+.mobileBtn {
+    display: none;
+    height: 100%;
+}
+
+@media (max-width: 800px) {
+    .mobileBtn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin: 0 5px;
+        cursor: pointer;
+        z-index: 10;
+    }
+}

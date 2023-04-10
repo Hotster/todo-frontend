@@ -1,0 +1,11 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    background-color: var(--dark-gray);
+    border-radius: 5px;
+}
+
+.title {
+    font-size: 1.5rem;
+}

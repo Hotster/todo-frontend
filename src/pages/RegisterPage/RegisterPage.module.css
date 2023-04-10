@@ -1,0 +1,57 @@
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+    gap: .5em;
+    width: 40%;
+    min-width: 200px;
+    max-width: 250px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: .75em;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: var(--dark-gray);
+}
+
+.formTitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.25rem;
+    padding-bottom: .25em;
+    margin-bottom: .25em;
+    border-bottom: 1px solid var(--gray-line);
+}
+
+.formGroup {
+    display: flex;
+    gap: .2em;
+    flex-direction: column;
+}
+
+.formError {
+    font-size: .75rem;
+    color: var(--red);
+    list-style: disc;
+    list-style-position: inside;
+}
+
+.registerButton {
+    margin-top: .5em;
+}
+
+.suggestion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.link {
+    color: var(--blue);
+}

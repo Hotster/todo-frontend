@@ -1,0 +1,14 @@
+.button {
+    cursor: pointer;
+    border: none;
+    width: 1.25em;
+    height: 1.25em;
+    background-color: var(--dark-gray-field);
+    background-image: url("../../../icons/arrows.svg");
+    background-size: cover;
+    transition: all .25s;
+}
+
+.active {
+    transform: rotate(180deg);
+}

@@ -1,0 +1,32 @@
+.checkbox {
+    display: none;
+}
+
+.checkboxFrame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.customCheckbox {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.customCheckbox::before {
+    content: "";
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    background-size: cover;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.customStarCheckbox::before {
+    background-image: url("../../icons/starEmpty.svg");
+}
+
+.checkbox:checked+.customStarCheckbox::before {
+    background-image: url("../../icons/star.svg");
+}

@@ -1,13 +1,88 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --black: #000000;
+  --white: #FFFFFF;
+  --dark-gray: #1C1C1E;
+  --dark-gray-field: #2F2F33;
+  --gray-field: #39383D;
+  --gray-line: #58585A;
+  --gray-font: #868688;
+  --gray-placeholder: #757575;
+  --gray: #5E5E60;
+  --red: #FD393A;
+  --blue: #117DEC;
+  --light-blue: #7ED0EC;
+  --green: #34C85A;   
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: var(--black);
+  color: var(--white);
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+textarea,
+input[type="date"],
+input::placeholder,
+textarea::placeholder {
+  font-family: 'Roboto', sans-serif;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.container,
+.authContainer,
+.contentContainer {
+  display: grid;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1200px;
+  min-height: 100vh;
+}
+
+.authContainer {
+  grid-template-rows: auto 1fr;
+  min-height: 100vh;
+}
+
+.contentContainer {
+  position: relative;
+  grid-template-columns: auto 1fr;
+  gap: .5em;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.wrapper {
+  padding: .5rem;
+}
+
+@media (max-width: 800px) {
+  .contentContainer {
+    grid-template-columns: 1fr;
+  }
 }

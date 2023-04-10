@@ -1,0 +1,14 @@
+.menuItemContainer {
+    display: flex;
+    align-items: center;
+    height: 2em;
+}
+
+.menuItemName {
+    padding: .5em;
+}
+
+.active {
+    background-color: var(--gray-field);
+    border-radius: 5px;
+}
